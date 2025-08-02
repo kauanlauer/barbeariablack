@@ -1,0 +1,33 @@
+/* assets/css/style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef !important; /* Um cinza claro para o hover */
+}
+
+.status-confirmado {
+    color: #198754; /* Verde do Bootstrap */
+    font-weight: 500;
+}
+
+.status-cancelado {
+    color: #6c757d; /* Cinza secundário do Bootstrap */
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.navbar {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Animação para a nova linha */
+@keyframes highlight-new-row {
+    from { background-color: #ffc107; } /* Amarelo do Bootstrap */
+    to { background-color: transparent; }
+}
+
+.new-row-animation {
+    animation: highlight-new-row 2s ease-out;
+}
